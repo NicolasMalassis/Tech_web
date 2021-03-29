@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style3.css" />
+        <title>Le royaume des stats</title>
+    </head>
+    
+    <body>
+        <div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <div id="logo">
+                        <img src="../images/scei.gif" alt="Logo scei" />
+                        <h1>Scei</h1>    
+                    </div>
+                    <h2>Toutes les stats</h2>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Administrateur</a></li>
+                        <li><a href="#">Visiteur</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div id="banniere_image">
+                <div id="banniere_description">
+                    Le But de tout à chacun
+                    <a href="#" class="bouton_rouge">Voir l'article <img src="../images/flecheblanchedroite.png" alt="" /></a>
+                </div>
+            </div>
+            	
+				<article>
+                    <h1>Recherche concours:</h1>
+					<label for="Label 1">Choisir une filière:</label>
+					<select name="filere1" id="filiere1">
+					<option value="">--Please choose an option--</option>
+					</select>
+					<label for="Label 1">Concours recherchés:</label>
+					<input id="my-input1" type="text"/> 
+                    <button id="my-button2">Rechercher</button>
+                </article>
+                
+				<article>
+                    <h1>Recherche d'une école:</h1>
+                    <label for="Label 1">Choisir une filière:</label>
+					<select name="filiere" id="filiere" onchange="choixRechercheEcole();">
+						<option value="">--Please choose an option--</option>
+					</select>
+					<label for="Label 2">Choisir un coucours:</label>
+					<select name="concours" id="concours">
+						<option value="">--Please choose an option--</option>
+					</select>
+					<p>
+						<label for="Label 3">Rentrez l'école recherchée:</label>
+                    	<input id="my-input" type="text" /> 
+                    	<button id="my-button">Rechercher</button>
+                    </p>
+                </article>
+			
+				<p></p>
+					<h1>Résultat de votre recherche:</h1>
+					<ul class="resultat" id="resultat">
+					</ul>				
+			
+			</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="page3.js"></script>
+    </body>
+	
+</html>

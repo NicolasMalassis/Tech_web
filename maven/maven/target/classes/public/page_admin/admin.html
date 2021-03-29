@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style2.css" />
+        <title>Le royaume des stats</title>
+    </head>
+    
+    <body>
+        <div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <div id="logo">
+                        <img src="../images/scei.gif" alt="Logo scei" />
+                        <h1>Scei</h1>    
+                    </div>
+                    <h2>Toutes les stats</h2>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Administrateur</a></li>
+                        <li><a href="#">Visiteur</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div id="banniere_image">
+                <div id="banniere_description">
+                    Le But de tout à chacun
+                    <a href="#" class="bouton_rouge">Voir l'article<img src="../images/flecheblanchedroite.png" alt="" /></a>
+                </div>
+            </div>
+			<!-- <section> -->
+				<article>
+                    <h1>Ajout d'une filière:</h1>
+                    <input id="my-input1" type="text" /> <button id="my-button1">Ajouter</button>
+                </article>
+                	<ul class="list-filieres" id="listFilieres"></ul>
+				<article>
+                    <h1>Ajout d'un concours:</h1>
+					<label for="Label 1">Choisir une filière:</label>
+					<select name="filiere1" id="filiere1"><option value="">--Please choose an option--</option>
+					</select>
+					<p><label for="Label 2">Rentrez le nouveau concours:</label>
+                    <input id="my-input2" type="text" /> <button id="my-button2">Ajouter</button></p>
+                </article>
+				<article>
+                    <h1>Ajout d'une Ecole:</h1>
+					<label for="Label 3">Choisir une filière:</label>
+					<select name="filiere2" id="filiere2" onchange="choixAjout();">
+					<option value="">--Please choose an option--</option>
+					</select>
+					<label for="Label 4">Choisir un concours:</label>
+					<select name="concours1" id="concours1">
+					<option value="">--Please choose an option--</option>
+					</select>
+					<p><label for="Label 5">Rentrez la nouvelle école:</label>
+                    <input id="my-input3" type="text" /> 
+					<p>
+						<label for="Label 6">Nombre d'inscrit:</label>
+						<input id="my-input4" type="number" /> 
+					</p>
+					<p>
+						<label for="Label 7">Nombre de personne classées:</label>
+						<input id="my-input5" type="number" /> 
+					
+					</p>
+					<p>
+						<label for="Label 8">Nombre de personne intégrées:</label>
+						<input id="my-input6" type="number" /> 
+					</p>
+					<p> <button id="my-button3">Ajouter</button></p>
+                </article>
+				<p> </p>
+				<article>
+                    <h1>Suppression d'une Ecole:</h1>
+					<label for="Label 9">Choisir une filière:</label>
+					<select name="filiere3" id="filiere3" onchange="choixSuppression();">
+					<option value="">--Please choose an option--</option>
+					</select>
+					<label for="Label 10">Choisir un concours:</label>
+					<select name="concours2" id="concours2" onchange="choixSuppressionEcoles();">
+					<option value="">--Please choose an option--</option>
+					</select><p>
+					<label for="Label 11">Choisir une école:</label>
+					<select name="ecole" id="ecole">
+					<option value="">--Please choose an option--</option>
+					</select></p>
+					<p> <button id="my-button4">Suppression</button></p>
+				</article>
+				<p> </p>
+				<article>
+                    <h1>Mise à jour d'une Ecole:</h1>
+					<label for="Label 12">Choisir une filière:</label>
+					<select name="filiere4" id="filiere4" onchange="choixModification();">
+					<option value="">--Please choose an option--</option>
+					</select>
+					<label for="Label 13">Choisir un concours:</label>
+					<select name="concours3" id="concours3" onchange="choixModificationEcoles();">
+					<option value="">--Please choose an option--</option>
+					</select><p></p>
+					<label for="Label 14">Choisir une école:</label>
+					<select name="ecole2" id="ecole2">
+					<option value="">--Please choose an option--</option>
+					</select>
+					<label for="Label 15">Choisir une statistique:</label>
+					<select name="stat" id="stat">
+					<option value="">--Please choose an option--</option>
+					<option value="1">inscrits</option>
+					<option value="2">classes</option>
+					<option value="3">integres</option>
+					</select>
+					<p>
+						<label for="Label 8">Modification:</label>
+						<input id="my-input7" type="number" /> 
+					</p>
+					<p> <button id="my-button5">Modifier</button></p>
+				</article>
+			</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="page2.js"></script>
+    </body>
+	
+</html>
